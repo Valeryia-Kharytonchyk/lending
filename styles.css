@@ -1,0 +1,476 @@
+body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center; 
+}
+
+
+.burger {
+  display: none;
+}
+
+.header-logo {
+  position: relative;
+  left: 10%;
+}
+
+.header-nav {
+  position: relative;
+  right: 10%;
+}
+
+
+@media screen and (max-width: 930px) {
+  .header-nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    right: 10%;
+  }
+ 
+}
+
+/*первый экран*/
+
+.first-screen {
+  
+}
+
+.fs-info {
+ width: 50%;
+ padding-top: 10%;
+ padding-bottom: 10%;
+ position: relative;
+ left: 10%;
+}
+
+.first-screen {
+  background-image: url(pictures/red-blue-\ 1.png);
+  background-size: cover; 
+}
+
+/*Для чего нужен нутрициолог?*/
+
+.why-need {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resons-why {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.reason-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  margin: 20px;
+}
+
+.informatoin-about {
+  position: relative;
+  left: 10%;
+}
+
+
+/*обо мне*/
+
+.about {
+  background-color: #23573F;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10%;
+}
+
+.text-part {
+  position: relative;
+  left: 10%;
+  width: 50%;
+  max-width: 880px;
+  padding-bottom: 5%;
+}
+
+.desigions {
+  display: flex;
+  flex-direction: row;
+}
+
+.desigions-part {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.olga-pict {
+  position: relative;
+  right: 10%;
+  width: 33%;
+  max-width: 630px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .desigions {
+      flex-wrap: wrap;
+  }
+ 
+  .desigions-part {
+    width: 80%;
+    
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+ 
+  .desigions-part {
+    width: 80%;
+  }
+
+  .olga-pict {
+    position: static;
+    width: 80%;
+  }
+
+  .text-part {
+    position: static;
+    left: 0%;
+    width: 80%;
+    padding-bottom: 5%;
+  }
+
+}
+
+/*как получить консультацию*/
+
+.how-to-get {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.how-to-get-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.how-to-get-item {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/*отзывы*/
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+.rewiev-part {
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.photo-rewiev {
+ display: block;
+ width: 25%;
+ height: 25%;
+}
+
+.reviw-info {
+  width: 70%;
+  max-width: 630px;
+}
+
+.carousel-indicators {
+  display: flex;
+  padding: 0px;
+  margin-top: 10%;
+}
+
+.carousel-indicator {
+  list-style-type: none;
+  width: 10px;
+  height: 10px;
+  background-color: #C4C4C4;
+  border-radius: 16px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0px 0px 0px 0px;
+}
+
+.carousel-indicator:first-child {
+  padding-bottom: 0px;
+  background-color: #F3AA34;
+}
+
+@media screen and (max-width: 1200px) {
+  .photo-rewiev {
+    display: block;
+    width: 50%;
+    height: 50%;
+   }
+
+  .rewiev-part {
+      flex-wrap: wrap;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-icons {
+    display: none;
+  }
+
+  .footer-icons-left {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+/*форма обр связи*/
+
+.connection {
+  background-color: #FFB033;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.connection-text-part {
+  width: 40%;
+  max-width: 570px;
+}
+
+.connection-picture {
+  display: block;
+  width: 35%;
+  height: 35%;
+}
+
+.input-item {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-color: #FFB033;
+}
+
+textarea {
+  width: 100%;
+  height: 180px;
+  border-radius: 5px;
+  border-color: #FFB033;
+}
+
+
+form {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1600px) {
+  .connection-picture {
+    display: none;
+  }
+
+  .connection-text-part {
+    justify-content: center;
+  }
+
+  .connection-text-part {
+    width: 80%;
+  }
+
+}
+
+/*футер*/
+
+
+footer {
+  background-color: #48061E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*buttons*/
+
+button {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #DF356D;
+  border: 0px;
+  border-radius: 60px;
+  padding: 18px 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #FE2D72;
+}
+
+/*text*/
+
+.nav-link {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 600;
+  color: #5F606A;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #48061E;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+p {
+  font-family: 'Roboto';
+  color: #5F606A;
+}
+
+.prosession {
+  font-size: 36px;
+  color: #48061E;
+  margin: 0px;
+}
+
+.item-description {
+  font-size: 24px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-size: 80px;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  color: #48061E;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-size: 52px;
+  font-weight: 700;
+  color: #48061E;
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+@media screen and (max-width: 460px) {
+  h2 {
+    font-size: 42px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.about-olga {
+  font-size: 24px;
+}
+
+.body-size {
+  font-size: 20px;
+}
+
+.tiny {
+  font-weight: 200;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  color: #48061E;
+  text-align: center;
+}
+
+.footer-nav-link {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-nav-link:hover {
+  color: #FFB033;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
